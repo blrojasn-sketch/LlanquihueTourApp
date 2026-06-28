@@ -1,8 +1,0 @@
-Lago Llanquihue;Llanquihue;lacustre;15000
-Ruta de la Cerveza;Llanquihue;gastronomico;12000
-Volcán Osorno;Llanquihue;aventura;20000
-Museo Colonial Alemán;Frutillar;cultural;8000
-Saltos del Petrohué;Puerto Varas;aventura;18000
-Circuito de los Pueblos;Frutillar y Puerto Octay;cultural;21000
-Paseo en Catamarán;Frutillar Bajo;aventura;10000
-Muelle de Llanquihue;Llanquihue;cultural;10000

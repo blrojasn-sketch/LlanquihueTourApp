@@ -1,0 +1,10 @@
+Tour Lago Llanquihue,Llanquihue,15000
+Volcán Osorno,Puerto Varas,25000
+Saltos del Petrohué,Ensenada,30000
+Isla de Chiloé,Chiloé,40000
+Termas del Sol,Puelo,35000
+Parque Vicente Pérez Rosales,Puerto Varas,20000
+Navegación Todos los Santos,Petrohué,45000
+City Tour Puerto Montt,Puerto Montt,18000
+Ruta de los Volcanes,Osorno,28000
+Excursión Alerce Andino,Hornopirén,2200
