@@ -1,33 +1,58 @@
-Llanquihue Tour
+LlanquihueTourApp
 
-Descripción
-Este proyecto corresponde a una aplicación en Java que permite leer datos desde un archivo de texto (.txt), crear objetos a partir de esos datos y almacenarlos en una colección ArrayList.
+Descripción de la actividad (Semana 6)
 
-El sistema simula la gestión de tours turísticos en la agencia Llanquihue Tour, permitiendo visualizar y filtrar información según distintos criterios.
+En esta semana se implementó una jerarquía de clases usando herencia simple en Java.  
+El objetivo fue modelar distintos tipos de servicios turísticos ofrecidos por la agencia Llanquihue Tour, reutilizando atributos comunes y extendiendo funciones específicas en cada clase.
 
-Estructura del proyecto
+Se aplico:
+- Herencia
+- Uso de super()
+- Sobrescritura de métodos (toString)
+- Organización modular por paquetes
 
-llanquihue-tour/
+Clases creadas
+
+Clase base
+- ServicioTuristico
+  - Atributos:
+    - nombre
+    - duracionHoras
+
+Subclases
+
+- RutaGastronomica
+  - Atributo adicional:
+    - numeroDeParadas
+
+- PaseoLacustre
+  - Atributo adicional:
+    - tipoEmbarcacion
+
+- **ExcursionCultural**
+  - Atributo adicional:
+    - lugarHistorico
+
+
+Organización del proyecto
+
+LlanquihueTourApp
 │
-├── src/
-│   ├── model/        Clase Tour (modelo de datos)
-│   ├── data/         Clase GestorDatos (lectura de archivo)
-│   ├── ui/           Clase Main (ejecución del programa)
-│
-├── resources/        Archivo de datos
-│   └── tours.txt
-│
-└── README.md
+├── model
+├── data
+└── ui
 
-Instrucciones de ejecución
+model: contiene la jerarquía de clases
+data: contiene la clase GestorServicios
+ui: contiene la clase Main
 
-1. Abrir el proyecto en IntelliJ IDEA
-2. Verificar que el archivo `tours.txt` esté en la carpeta `resources`
-3. Ejecutar la clase:ui.Main
-4. El programa mostrará:
-   - Lista completa de tours
-   - Tours filtrados por precio
-   - Tours filtrados por tipo
-  
+Instrucciones para ejecutar
 
----
+1. Abrir el proyecto en IntelliJ
+2. Ir al paquete "ui"
+3. Ejecutar la clase "Main.java"
+4. El programa mostrará en consola los servicios turísticos creados
+
+Resultado esperado
+
+Se visualizará en consola la información de cada servicio, incluyendo sus atributos específicos.
