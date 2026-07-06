@@ -1,33 +1,45 @@
-Llanquihue Tour
+LlanquihueTourApp
 
 Descripción
-Este proyecto corresponde a una aplicación en Java que permite leer datos desde un archivo de texto (.txt), crear objetos a partir de esos datos y almacenarlos en una colección ArrayList.
 
-El sistema simula la gestión de tours turísticos en la agencia Llanquihue Tour, permitiendo visualizar y filtrar información según distintos criterios.
+LlanquihueTourApp es una aplicación desarrollada en Java para 
+gestionar los distintos servicios turísticos ofrecidos por la 
+agencia Llanquihue Tour.
 
-Estructura del proyecto
+Durante esta etapa del proyecto se incorporaron los conceptos 
+de herencia, polimorfismo y colecciones, permitiendo almacenar 
+y administrar diferentes tipos de servicios turísticos mediante 
+una estructura flexible y reutilizable.
 
-llanquihue-tour/
+
+Objetivo de la Semana
+
+Implementar una colección polimórfica utilizando `List<ServicioTuristico>` 
+para almacenar distintos tipos de servicios turísticos y recorrerlos 
+aplicando polimorfismo mediante el método `mostrarInformacion()`.
+
+Conceptos aplicados:
+
+- Herencia simple
+- Sobrescritura de métodos
+- Polimorfismo
+- Colecciones (`ArrayList`)
+- Organización por paquetes
+- Uso de la anotación `@Override
+
+Estructura del Proyecto
+
+LlanquihueTourApp
 │
-├── src/
-│   ├── model/        Clase Tour (modelo de datos)
-│   ├── data/         Clase GestorDatos (lectura de archivo)
-│   ├── ui/           Clase Main (ejecución del programa)
+├── model
+│   ├── ExcursionCultural.java
+│   ├── PaseoLacustre.java
+│   ├── RutaGastronomica.java
+│   └── ServicioTuristico.java
 │
-├── resources/        Archivo de datos
-│   └── tours.txt
+├── data
+│   └── GestorServicios.java
 │
-└── README.md
+└── ui
+    └── Main.java
 
-Instrucciones de ejecución
-
-1. Abrir el proyecto en IntelliJ IDEA
-2. Verificar que el archivo `tours.txt` esté en la carpeta `resources`
-3. Ejecutar la clase:ui.Main
-4. El programa mostrará:
-   - Lista completa de tours
-   - Tours filtrados por precio
-   - Tours filtrados por tipo
-  
-
----
