@@ -1,29 +1,40 @@
 package data;
 
-import model.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import model.ExcursionCultural;
+import model.PaseoLacustre;
+import model.RutaGastronomica;
+import model.ServicioTuristico;
 
 public class GestorServicios {
 
-    public static ServicioTuristico[] crearServicios() {
+    public List<ServicioTuristico> obtenerServicios() {
 
-        ServicioTuristico[] servicios = new ServicioTuristico[6];
+        List<ServicioTuristico> servicios = new ArrayList<>();
 
-        servicios[0] = new RutaGastronomica("Ruta del Salmón", 4, 5);
+        servicios.add(new RutaGastronomica(
+                "Sabores de Llanquihue", 4, 5));
 
-        servicios[1] = new RutaGastronomica("Sabores del Sur", 3, 4);
+        servicios.add(new RutaGastronomica(
+                "Ruta del Salmón", 3, 4));
 
-        servicios[2] = new PaseoLacustre("Lago Llanquihue", 2, "Lancha");
+        servicios.add(new PaseoLacustre(
+                "Tour Lago Llanquihue", 2, "Catamarán"));
 
-        servicios[3] = new PaseoLacustre("Tour Frutillar", 3, "Catamarán");
+        servicios.add(new PaseoLacustre(
+                "Navegación Frutillar", 3, "Lancha"));
 
-        servicios[4] = new ExcursionCultural("Museo Alemán", 2, "Frutillar");
+        servicios.add(new ExcursionCultural(
+                "Museo Colonial Alemán", 2, "Frutillar"));
 
-        servicios[5] = new ExcursionCultural("Iglesias Patrimoniales", 5, "Chiloé");
+        servicios.add(new ExcursionCultural(
+                "Iglesias Patrimoniales", 5, "Chiloé"));
 
         return servicios;
     }
 }
-
 
 
 

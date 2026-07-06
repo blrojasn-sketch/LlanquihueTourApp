@@ -1,7 +1,7 @@
 package model;
 
-
 public class PaseoLacustre extends ServicioTuristico {
+
     private String tipoEmbarcacion;
 
     public PaseoLacustre(String nombre, int duracionHoras, String tipoEmbarcacion) {
@@ -10,9 +10,11 @@ public class PaseoLacustre extends ServicioTuristico {
     }
 
     @Override
-    public String toString() {
-        return super.toString() +
-                " | Embarcación: " + tipoEmbarcacion;
+    public void mostrarInformacion() {
+        System.out.println("=== Paseo Lacustre ===");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Duración: " + duracionHoras + " horas");
+        System.out.println("Tipo de embarcación: " + tipoEmbarcacion);
+        System.out.println();
     }
 }
-
