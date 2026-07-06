@@ -1,56 +1,33 @@
 Llanquihue Tour
 
+Descripción
+Este proyecto corresponde a una aplicación en Java que permite leer datos desde un archivo de texto (.txt), crear objetos a partir de esos datos y almacenarlos en una colección ArrayList.
 
-LlanquihueTourApp es una aplicación desarrollada en Java para gestionar 
-los distintos servicios turísticos ofrecidos por la agencia Llanquihue Tour.
-Durante esta etapa del proyecto se incorporaron los conceptos de herencia, 
-polimorfismo y colecciones, permitiendo almacenar y administrar diferentes tipos 
-de servicios turísticos mediante una estructura flexible y reutilizable.
+El sistema simula la gestión de tours turísticos en la agencia Llanquihue Tour, permitiendo visualizar y filtrar información según distintos criterios.
 
+Estructura del proyecto
 
-Objetivo de la Semana
-
-Implementar una colección polimórfica utilizando `List<ServicioTuristico>` 
-para almacenar distintos tipos de servicios turísticos y recorrerlos aplicando polimorfismo 
-mediante el método `mostrarInformacion()`.
-
-Conceptos aplicados:
-
-- Herencia simple
-- Sobrescritura de métodos
-- Polimorfismo
-- Colecciones (`ArrayList`)
-- Organización por paquetes
-- Uso de la anotación `@Override`
-
-
-Estructura del Proyecto
-
-LlanquihueTourApp
+llanquihue-tour/
 │
-├── model
-│   ├── ExcursionCultural.java
-│   ├── PaseoLacustre.java
-│   ├── RutaGastronomica.java
-│   └── ServicioTuristico.java
+├── src/
+│   ├── model/        Clase Tour (modelo de datos)
+│   ├── data/         Clase GestorDatos (lectura de archivo)
+│   ├── ui/           Clase Main (ejecución del programa)
 │
-├── data
-│   └── GestorServicios.java
+├── resources/        Archivo de datos
+│   └── tours.txt
 │
-└── ui
-    └── Main.java
+└── README.md
 
+Instrucciones de ejecución
 
-Instrucciones para ejecutar el sistema
+1. Abrir el proyecto en IntelliJ IDEA
+2. Verificar que el archivo `tours.txt` esté en la carpeta `resources`
+3. Ejecutar la clase:ui.Main
+4. El programa mostrará:
+   - Lista completa de tours
+   - Tours filtrados por precio
+   - Tours filtrados por tipo
+  
 
-Expandir la carpeta src.
-Abrir el paquete ui.
-Seleccionar la clase Main.java.
-Hacer clic en el botón Run (▶) ubicado junto al método main.
-o Hacer clic derecho sobre Main.java y seleccionar Run 'Main.main()'.
-
-Resultado esperado
-Al ejecutar la aplicación, se mostrará en la consola la información
-de los distintos servicios turísticos registrados, 
-utilizando polimorfismo para desplegar los datos específicos 
-de cada tipo de servicio.
+---
