@@ -1,21 +1,39 @@
 package ui;
 
-import java.util.List;
+import data.GestorEntidades;
+import model.*;
 
-import data.GestorServicios;
-import model.ServicioTuristico;
+import javax.swing.JOptionPane;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        GestorServicios gestor = new GestorServicios();
+        GestorEntidades gestor = new GestorEntidades();
 
-        List<ServicioTuristico> servicios =
-                gestor.obtenerServicios();
+        String nombreGuia = JOptionPane.showInputDialog(
+                "Ingrese nombre del guía turístico:");
 
-        for (ServicioTuristico servicio : servicios) {
-            servicio.mostrarInformacion();
-        }
+        String idioma = JOptionPane.showInputDialog(
+                "Ingrese idioma del guía:");
+
+        gestor.agregarEntidad(
+                new GuiaTuristico(nombreGuia, idioma));
+
+        String patente = JOptionPane.showInputDialog(
+                "Ingrese patente del vehículo:");
+
+        int capacidad = Integer.parseInt(
+                JOptionPane.showInputDialog(
+                        "Ingrese capacidad del vehículo:"));
+
+        gestor.agregarEntidad(
+                new Vehiculo(patente, capacidad));
+
+        JOptionPane.showMessageDialog(
+                null,
+                gestor.mostrarEntidades(),
+                "Resumen de Entidades",
+                JOptionPane.INFORMATION_MESSAGE);
     }
 }
